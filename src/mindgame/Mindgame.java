@@ -1,7 +1,5 @@
 package mindgame;
 
-import org.lwjgl.openal.AL;
-
 import processing.core.PApplet;
 import themidibus.MidiBus;
 import toxi.geom.Vec2D;
@@ -53,9 +51,5 @@ public class Mindgame extends PApplet {
 		physics.removeParticle(ball);
 		ball = new Ball(this, width / 2, height / 2);
 		physics.addParticle(ball);
-	}
-
-	public void stop() {
-		AL.destroy();
 	}
 }
